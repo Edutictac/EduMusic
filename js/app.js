@@ -26,11 +26,19 @@ function ensureSwFooter() {
       <span id="swVersion">cargando…</span>
       <button id="swUpdateBtn" class="sw-update-btn" style="display:none;">Actualizar</button>
     </div>
-    <div class="page-footer__links">
-      <a class="page-footer__link" data-about-link data-i18n="footer.about" href="#">Sobre EduMúsic</a>
-      <a class="page-footer__link" href="https://edutictac.es/privacitat.html">Privacitat</a>
-      <a class="page-footer__link" href="https://git.edutictac.es/Edutictac/edumusic" target="_blank" rel="noopener">Codi font</a>
-      <span class="page-footer__link">MIT</span>
+    <div class="ett-footer">
+      <p class="ett-footer__id">
+        <span class="ett-footer__brand">EduTicTac</span>
+        <span aria-hidden="true">·</span>
+        <span class="ett-footer__service">EduMúsic</span>
+      </p>
+      <div class="ett-footer__links">
+        <a href="https://edutictac.es/" data-i18n="footer.home">Inici</a>
+        <a data-about-link data-i18n="footer.about" href="#">Sobre EduMúsic</a>
+        <a href="https://edutictac.es/privacitat.html" data-i18n="footer.privacy">Privacitat</a>
+        <a href="https://github.com/Edutictac/EduMusic" data-i18n="footer.source">Codi font</a>
+        <a href="https://github.com/Edutictac/EduMusic/blob/main/LICENSE">MIT</a>
+      </div>
     </div>
   `;
   const aboutLink = host.querySelector('[data-about-link]');
@@ -229,6 +237,9 @@ function ensureSwFooter() {
       'lang.en': 'English',
       'gamehub.back': 'Volver al inicio',
       'game.back': 'Volver al inicio',
+      'footer.home': 'Inicio',
+      'footer.privacy': 'Privacidad',
+      'footer.source': 'Código fuente',
       'footer.about': 'Sobre EduMúsic'
     },
     val: {
@@ -244,6 +255,9 @@ function ensureSwFooter() {
       'lang.en': 'Anglés',
       'gamehub.back': "Torna a l'inici",
       'game.back': "Torna a l'inici",
+      'footer.home': 'Inici',
+      'footer.privacy': 'Privacitat',
+      'footer.source': 'Codi font',
       'footer.about': 'Sobre EduMúsic'
     },
     en: {
@@ -259,6 +273,9 @@ function ensureSwFooter() {
       'lang.en': 'English',
       'gamehub.back': 'Back to home',
       'game.back': 'Back to home',
+      'footer.home': 'Home',
+      'footer.privacy': 'Privacy',
+      'footer.source': 'Source code',
       'footer.about': 'About EduMúsic'
     }
   };

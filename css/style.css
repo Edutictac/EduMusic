@@ -1510,3 +1510,11 @@ body.has-gameover-overlay {
     font-size: 1.3rem;
   }
 }
+
+/* El peu comú ha de quedar per damunt del control de volum fix. */
+@media (min-width: 900px) {
+  .page-footer .ett-footer__links { margin-right: 190px; }
+}
+@media (max-width: 899px) {
+  .page-footer { padding-bottom: 150px; }
+}
